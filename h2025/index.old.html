@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Housing</title>
+
+  <style>
+    h1 {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      font-family: Arial;
+    }
+
+    table {
+      font-size: 2.7em;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid;
+      padding: 1px 5px 1px 5px;
+    }
+
+    .not-available {
+      background-color: grey;
+    }
+
+    img {
+      max-width: 100%;
+      vertical-align: top;
+    }
+
+    td.blank-row {
+      font-size: 20px;
+      border: 0px;
+    }
+
+    td.photo {
+      padding: 0 0 0 0;
+      margin: 0px;
+      border-spacing: 0px
+    }
+
+    td.price {
+      width: 10%;
+      color: inherit;
+    }
+
+    td.address {
+      width: 45%;
+    }
+
+    td.description {
+      width: 45%
+    }
+
+    td.detail {
+      font-size: smaller;
+    }
+
+    ;
+  </style>
+
+</head>
+
+<body>
+
+
+
+</body>
+
+<script>
+
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const id = urlParams.get('id');
+
+  fetch("./data.json")
+    .then(response => response.json())
+    .then(json => {
+
+      let htmlCode = '';
+      const bodyElement = document.querySelector('body');
+
+      if (id) {
+        // function filterById(jsonObject, id) {return jsonObject.filter(function(jsonObject) {return (jsonObject['id'] == id);})[0];}
+        //const house = filterById(json.houses, id);
+
+        const house = json.houses.filter(function (jsonObject) { return (jsonObject['id'] == id); })[0];
+        console.log(house);
+        if (house) {
+          document.title = house.title;
+          htmlCode += `<div>
+                      <h1 style="color:red;">${house.title}, ${house.price} ${house.extra_info ? ' (' + house.extra_info + ')' : ''}</h1>
+                      <h1>${house.bedrooms} · ${house.bathrooms} · ${house.parkings} · ${house.size} · ${house.year} yr</h1>
+                      <h1>費$0 · 地$159 · 校$?</h1>
+                      </div>`;
+          htmlCode += `<div>
+                      <iframe src="${house.google_map}"
+                      width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>`;
+
+          htmlCode += "<div>";
+          house.images.forEach(image => {
+            htmlCode += `<img src="${image}">`;
+          });
+          htmlCode += "</div>";
+        }
+        else {
+          htmlCode = '<p>Invalid id</p>';
+        }
+      }
+      else {
+        htmlCode = '<table>';
+        json.houses.forEach(house => {
+          if (house.display) {
+            htmlCode += `<tbody class="${(house.available ? '' : 'not-')}available">`;
+            htmlCode += `<tr><td colspan="99" class="photo"><a href="?id=${house.id}"><img src ="${house.images[0]}"></a></td></tr>`;
+            htmlCode += `<tr>
+              <td class="price">${house.price}</td>
+              <td class="address">${house.address}</td>
+              <td class="description">${house.extra_info}</td>
+              </tr>`;
+            htmlCode += `<tr>
+              <td colspan="99" class="detail">${house.bedrooms} · ${house.bathrooms} · ${house.parkings} · ${house.size} · ${house.year} yr
+              <br>費$488 · 地$202 · 校$29
+              </td>
+              </tr>`;
+            htmlCode += '</tbody>';
+            htmlCode += '<tr><td class="blank-row">&nbsp;</td></tr>';
+          }
+        });
+
+        htmlCode += '</table>';
+
+        //console.log(htmlCode);
+
+      }
+
+      bodyElement.innerHTML = htmlCode;
+
+    });
+</script>
+
+</html>
