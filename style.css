@@ -51,9 +51,16 @@ body {
 }
 
 .house-table .house-table__cover {
+  position: relative;
   padding: 0 0 0 0;
   margin: 0px;
-  border-spacing: 0px
+  border-spacing: 0px;
+}
+
+.house-table .house-table__postion {
+  position: absolute;
+  font-size: 2em;
+  margin: 3px;
 }
 
 .house-table .house-table__price {

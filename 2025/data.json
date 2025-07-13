@@ -2,6 +2,7 @@
   "houses": [
     {
       "id": "sample",
+      "pos": 0,
       "title": "1817 Rue Allard",
       "price": "$999,000",
       "display": false,
@@ -26,6 +27,7 @@
     },
     {
       "id": "dR9p",
+      "pos": 18,
       "title": "1220 Place Rochefort",
       "price": "$499,000",
       "display": true,
@@ -67,6 +69,7 @@
     },
     {
       "id": "ge1E",
+      "pos": 17,
       "title": "7337 Rue du Chardonneret",
       "price": "$490,000",
       "display": true,
@@ -123,6 +126,7 @@
     },
     {
       "id": "DOt2",
+      "pos": 16,
       "title": "2682 Rue Préfontaine",
       "price": "$499,500",
       "display": true,
@@ -177,6 +181,7 @@
     },
     {
       "id": "8Awr",
+      "pos": 15,
       "title": "3658 Rue Mance",
       "price": "$575,000",
       "display": true,
@@ -223,6 +228,7 @@
     },
     {
       "id": "wRo5",
+      "pos": 14,
       "title": "5850 Rue de la Cigogne",
       "price": "$590,000",
       "display": true,
@@ -270,6 +276,7 @@
     },
     {
       "id": "7PiS",
+      "pos": 13,
       "title": "218-5505 Rue de Châteauneuf",
       "price": "$618,000",
       "display": true,
@@ -321,6 +328,7 @@
     },
     {
       "id": "DRl4",
+      "pos": 12,
       "title": "6512 Rue Claudel",
       "price": "$510,000",
       "display": true,
@@ -384,6 +392,7 @@
     },
     {
       "id": "rlK9",
+      "pos": 11,
       "title": "3081 Rue Paquette",
       "price": "$615,000",
       "display": true,
@@ -441,6 +450,7 @@
     },
     {
       "id": "y7Ql",
+      "pos": 10,
       "title": "586 Avenue Stravinski",
       "price": "$529,000",
       "display": false,
@@ -492,6 +502,7 @@
     },
     {
       "id": "v6Fe",
+      "pos": 9,
       "title": "3820 Rue du Collège",
       "price": "$549,000",
       "display": true,
@@ -550,6 +561,7 @@
     },
     {
       "id": "8lDr",
+      "pos": 8,
       "title": "3658 Rue Mance",
       "price": "$575,000",
       "display": true,
@@ -596,6 +608,7 @@
     },
     {
       "id": "GAs4",
+      "pos": 7,
       "title": "3304 boulevard Gareau",
       "price": "$449,000",
       "display": true,
@@ -648,6 +661,7 @@
     },
     {
       "id": "b7hO",
+      "pos": 6,
       "title": "5-5635 Rue Charpentier",
       "price": "$535,000",
       "display": true,
@@ -705,6 +719,7 @@
     },
     {
       "id": "fr4K",
+      "pos": 5,
       "title": "6275 Rue de Lancaster",
       "price": "$529,000",
       "display": true,
@@ -751,6 +766,7 @@
     },
     {
       "id": "hO8A",
+      "pos": 4,
       "title": "5-8385 Rue de Londres",
       "price": "$559,000",
       "display": true,
@@ -807,6 +823,7 @@
     },
     {
       "id": "Stl9",
+      "pos": 3,
       "title": "6375 Rue de Lancaster",
       "price": "$548,900",
       "display": true,
@@ -844,6 +861,7 @@
     },
     {
       "id": "fr8P",
+      "pos": 2,
       "title": "10867 Avenue LeBlanc",
       "price": "$458,000 +T",
       "display": true,
@@ -888,6 +906,7 @@
     },
     {
       "id": "6plU",
+      "pos": 1,
       "title": "4-8060 Rue de Londres",
       "price": "$545,000",
       "display": true,

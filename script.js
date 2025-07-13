@@ -53,10 +53,13 @@ fetch("./data.json")
       htmlCode = '<table class="house-table">';
       json.houses.forEach(house => {
         if (house.display) {
+          if (house.pos > 0) {
+            //htmlCode += `${house.pos}`;
+          }
           htmlCode += `
             <tbody class="${(house.date_delisted ? 'not-' : '')}available">
               <tr>
-                <td colspan="99" class="house-table__cover"><a href="?id=${house.id}"><img src ="${house.images[0]}"></a></td>
+                <td colspan="99" class="house-table__cover">${(house.pos > 0 ) ? '<span class="house-table__postion">' + house.pos + '</span>' : ""}<a href="?id=${house.id}"><img src ="${house.images[0]}"></a></td>
               </tr>
               <tr>
                 <td class="house-table__price">${house.price}</td>
