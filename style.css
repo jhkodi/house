@@ -60,7 +60,11 @@ body {
 .house-table .house-table__postion {
   position: absolute;
   font-size: 2em;
-  margin: 3px;
+  padding: 4px;
+  color: white;
+  background-color: rgb(50, 50, 50) ;
+  text-align: center;
+  opacity: 0.50;
 }
 
 .house-table .house-table__price {
