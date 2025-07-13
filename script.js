@@ -23,15 +23,17 @@ fetch("./data.json")
               <h1 style="color:red;">${house.title}, ${house.price} ${house.extra_info ? '<br>(' + house.extra_info + ')' : ''}</h1>
               <h2>${house.bedrooms} · ${house.bathrooms} · ${house.parkings} · ${house.size} · ${house.year} yr</h1>
               <h2>費$${house.condo_fee} · 地$${house.city_tax} · 校$${house.school_tax}</h1>
-            </div> 
-            
+            </div>`
+
+        if (house.google_map) {
+          htmlCode += `
             <div>
               <iframe src="${house.google_map}"
               style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+            </div>`
+        }
 
-            <div>`;
-            
+        htmlCode += '<div>';
         house.images.forEach(image => {
           htmlCode += `<img class="single-house__image" src="${image}">`;
         });

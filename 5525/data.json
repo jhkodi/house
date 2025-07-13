@@ -1,0 +1,68 @@
+{
+  "houses": [
+    {
+      "id": "sample",
+      "title": "1817 Rue Allard",
+      "price": "$590,000",
+      "display": false,
+      "date_added": "2025-07-12",
+      "date_delisted": "",
+      "year": "0000",
+      "address": "1817 Rue Allard",
+      "extra_info": "孖屋, A區",
+      "size": "0 平方米",
+      "bedrooms": "3 房",
+      "bathrooms": "1+1 廁",
+      "parkings": "0+2 車位",
+      "condo_fee": "?",
+      "city_tax": "?",
+      "school_tax": "?",
+      "centris": "0",
+      "google_map": "https://www.google.com/maps",
+      "images": [
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC5E3BF8D1163C13D10&t=pi&sm=m&w=1260&h=1024",
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC5E3BFFD1163C13D4D&t=pi&sm=m&w=1260&h=1024"
+      ]
+    },
+    {
+      "id": "5525",
+      "title": "2-5525 Avenue Albanie",
+      "price": "$449,000",
+      "display": true,
+      "date_added": "2025-07-12",
+      "date_delisted": "2024",
+      "year": "2018",
+      "address": "2-5525 Avenue Albanie",
+      "extra_info": "Condo, A區",
+      "size": "106.9 平方米",
+      "bedrooms": "3 房",
+      "bathrooms": "1 廁",
+      "parkings": "1 車位",
+      "condo_fee": "187",
+      "city_tax": "158",
+      "school_tax": "21",
+      "centris": "0",
+      "google_map": "https://www.google.com/maps/embed?pb=!4v1709092879734!6m8!1m7!1shL9_209454N50r6sXWWybQ!2m2!1d45.4802700915935!2d-73.45296007036256!3f147.48476!4f0!5f0.7820865974627469",
+      "images": [
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC3BDA9DD11FE344D1D&t=pi&f=I",
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC3BDA91D11FE344D44&t=pi&f=I",
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC3BDA92D11FE344D2E&t=pi&f=I",
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC3BDA9CD11FE344DC0&t=pi&f=I",
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC3BDA9ED11FE344DEF&t=pi&f=I",
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC3BDA9AD11FE344DA1&t=pi&f=I",
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC3BDA90D11FE344D02&t=pi&f=I",
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC3BDA9BD11FE344DBE&t=pi&f=I",
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC3BDA9FD11FE344DF0&t=pi&f=I",
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC3BDA98D11FE344D82&t=pi&f=I",
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC3BDA99D11FE344D9E&t=pi&f=I",
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC3BDA97D11FE344D70&t=pi&f=I",
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC3BDA93D11FE344D3F&t=pi&f=I",
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC3BDA95D11FE344D51&t=pi&f=I",
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC3BDA96D11FE344D62&t=pi&f=I",
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC3BDA7DD11FE3441D1&t=pi&f=I",
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC3BDA71D11FE344112&t=pi&f=I",
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC3BDA74D11FE34414E&t=pi&f=I"
+      ]
+    }
+  ]
+}
