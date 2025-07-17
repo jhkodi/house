@@ -20,6 +20,7 @@
       "city_tax": "?",
       "school_tax": "?",
       "centris": "0",
+      "centris_link": "",
       "google_map": "https://www.google.com/maps",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DC5E3BF8D1163C13D10&t=pi&sm=m&w=1260&h=1024",
@@ -46,6 +47,7 @@
       "city_tax": "4835",
       "school_tax": "505",
       "centris": "16357705",
+      "centris_link": "https://www.centris.ca/en/condos~for-sale~montreal-saint-leonard/16357705",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752730459012!6m8!1m7!1sSGe_Qhh6f82rM11mD-2jIg!2m2!1d45.57745829837921!2d-73.58256598493709!3f357.34835416020974!4f5.583578035255968!5f0.7820865974627469",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DEFEC46EDDDDDDD1DDA&t=pi&f=I",
@@ -108,6 +110,7 @@
       "city_tax": "2894",
       "school_tax": "251",
       "centris": "24291064",
+      "centris_link": "https://www.centris.ca/en/condos~for-sale~longueuil-le-vieux-longueuil/24291064",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752577132858!6m8!1m7!1sX3qSFQeFSkOFHGPw3kKH-A!2m2!1d45.5176430887459!2d-73.51945904615256!3f237.97!4f0!5f0.7820865974627469",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DEB17C8CDDDDDDD1DD4&t=pi&sm=m&w=1024&h=1024",
@@ -162,6 +165,7 @@
       "city_tax": "2545",
       "school_tax": "241",
       "centris": "24093142",
+      "centris_link": "https://www.centris.ca/en/condos~for-sale~longueuil-le-vieux-longueuil/24093142",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752493677734!6m8!1m7!1sYVnPXV2QYyAuPDBX_G8QUg!2m2!1d45.53301965418797!2d-73.48145200678334!3f28.514648!4f0!5f0.7820865974627469",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DEF10138DDDDDDD1DDC&t=pi&sm=m&w=1024&h=1024",
@@ -222,6 +226,7 @@
       "city_tax": "3244",
       "school_tax": "275",
       "centris": "16190747",
+      "centris_link": "https://www.centris.ca/en/condos~for-sale~saint-lambert-monteregie/16190747",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752493220492!6m8!1m7!1s-EzhgnhceyQHGERy4UUKNg!2m2!1d45.49948627849438!2d-73.5037269506693!3f318.1005!4f0!5f0.7820865974627469",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DEF47248DDDDDDD1DD1&t=pi&sm=m&w=1024&h=1024",
@@ -278,6 +283,7 @@
       "city_tax": "2381",
       "school_tax": "336",
       "centris": "20791684",
+      "centris_link": "https://www.centris.ca/en/condos~for-sale~brossard/20791684",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752463490886!6m8!1m7!1sypL5Vjco92_Ny5gAKyW8WA!2m2!1d45.45159909795755!2d-73.42695876173202!3f316.5347449733555!4f-2.2758167878735804!5f0.7820865974627469",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DEECD408DDDDDDD1DDC&t=pi&sm=m&w=1024&h=1024",
@@ -326,6 +332,7 @@
       "city_tax": "2494",
       "school_tax": "340",
       "centris": "21665223",
+      "centris_link": "https://www.centris.ca/en/condos~for-sale~brossard/21665223",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752463171581!6m8!1m7!1sEb0_P5g82Q7gby5F9SmxpA!2m2!1d45.45211612400693!2d-73.42620449263823!3f314.96417!4f0!5f0.7820865974627469",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DE0A7388DDDDDDD1DDE&t=pi&sm=m&w=1024&h=1024",
@@ -373,6 +380,7 @@
       "city_tax": "1731",
       "school_tax": "217",
       "centris": "15288839",
+      "centris_link": "https://www.centris.ca/en/condos~for-sale~brossard/15288839",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752442594246!6m8!1m7!1sSHmA8WibGliIbhKKK_F5yw!2m2!1d45.44186639893586!2d-73.4919610322397!3f258.4827057087435!4f7.44293755848004!5f1.537021344893835",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DEB730B2DDDDDDD1DDC&t=pi&sm=m&w=1024&h=1024",
@@ -416,6 +424,7 @@
       "city_tax": "1991",
       "school_tax": "253",
       "centris": "24350570",
+      "centris_link": "https://www.centris.ca/en/condos~for-sale~brossard/24350570",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752442033150!6m8!1m7!1s2o8310b5RvxlHKzRxj3Djg!2m2!1d45.45900534786092!2d-73.42139536804532!3f210.93494!4f0!5f0.7820865974627469",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DEB3ABFFDDDDDDD1DDF&t=pi&sm=m&w=1260&h=1024",
@@ -474,6 +483,7 @@
       "city_tax": "3127",
       "school_tax": "304",
       "centris": "16419654",
+      "centris_link": "https://www.centris.ca/en/condos~for-sale~longueuil-le-vieux-longueuil/16419654",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752441420594!6m8!1m7!1swHJZDJotedsx9L2_X9Ii0A!2m2!1d45.51062075805704!2d-73.47428174132706!3f199.48802!4f0!5f0.7820865974627469",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DEB632D1DDDDDDD1DD2&t=pi&sm=m&w=1024&h=1024",
@@ -530,6 +540,7 @@
       "city_tax": "2690",
       "school_tax": "279",
       "centris": "27113526",
+      "centris_link": "https://www.centris.ca/en/condos~for-sale~longueuil-saint-hubert/27113526",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752440776125!6m8!1m7!1s-QQ9dUw-5Z_HSIpOw6GMlg!2m2!1d45.49068527423582!2d-73.4715998700439!3f235.82484765196713!4f3.7044759217306904!5f1.5371583404030265",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DEBECEFFDDDDDDD1DDF&t=pi&sm=m&w=1024&h=1024",
@@ -578,6 +589,7 @@
       "city_tax": "2708",
       "school_tax": "386",
       "centris": "10563047",
+      "centris_link": "https://www.centris.ca/en/houses~for-sale~brossard/10563047",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752440178628!6m8!1m7!1sPGRMUeCGvwdiaDq0Dupx0A!2m2!1d45.45661896564108!2d-73.42157828368583!3f95.4833!4f0!5f0.7820865974627469",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DEFD7D88DDDDDDD1DD1&t=pi&sm=m&w=1024&h=1024",
@@ -627,6 +639,7 @@
       "city_tax": "2534",
       "school_tax": "357",
       "centris": "23327034",
+      "centris_link": "https://www.centris.ca/en/condominium-houses~for-sale~brossard/23327034",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752383515252!6m8!1m7!1s8X4IrzBhQp62wr0tA9CaHA!2m2!1d45.45424872452417!2d-73.4268564184754!3f224.43105!4f0!5f0.7820865974627469",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DEE33ADADDDDDDD1DDA&t=pi&sm=m&w=1260&h=1024",
@@ -680,6 +693,7 @@
       "city_tax": "2167",
       "school_tax": "289",
       "centris": "25846862",
+      "centris_link": "https://www.centris.ca/en/condos~for-sale~brossard/25846862",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752383000546!6m8!1m7!1sjN1j7q-27KfRcDnY6Lt-RA!2m2!1d45.46457158809986!2d-73.42950985567066!3f148.53664!4f0!5f0.7820865974627469",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DEF15EBFDDDDDDD1DD4&t=pi&sm=m&w=1260&h=1024",
@@ -745,6 +759,7 @@
       "city_tax": "3700",
       "school_tax": "366",
       "centris": "22256363",
+      "centris_link": "https://www.centris.ca/en/houses~for-sale~longueuil-saint-hubert/22256363",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752382476448!6m8!1m7!1skD2UQOnmW6FiRrO3KoemJA!2m2!1d45.49982773128152!2d-73.42259924699131!3f132.34776!4f0!5f0.7820865974627469",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DEF4664BDDDDDDD1DDC&t=pi&sm=m&w=1260&h=1024",
@@ -804,6 +819,7 @@
       "city_tax": "2025",
       "school_tax": "272",
       "centris": "19294098",
+      "centris_link": "",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752381866263!6m8!1m7!1sBcatiTAzDGeyiA47r-Npvw!2m2!1d45.45543890419442!2d-73.4913133239621!3f108.59874!4f0!5f0.7820865974627469",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DEF43D96DDDDDDD1DDD&t=pi&sm=m&w=1260&h=1024",
@@ -857,6 +873,7 @@
       "city_tax": "3937",
       "school_tax": "390",
       "centris": "26135745",
+      "centris_link": "https://www.centris.ca/en/houses~for-sale~longueuil-saint-hubert/26135745",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752381391394!6m8!1m7!1s37EYYZk-vg3Tt1rmBzV6kg!2m2!1d45.46303877567826!2d-73.37848803398938!3f284.8274428488172!4f-1.6399290217025424!5f0.6877162574520375",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DEF29D60DDDDDDD1DDB&t=pi&sm=m&w=1260&h=1024",
@@ -917,6 +934,7 @@
       "city_tax": "2690",
       "school_tax": "279",
       "centris": "27113526",
+      "centris_link": "",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752380977322!6m8!1m7!1sh7xaYl5Ht3C9CPFXNs9O2w!2m2!1d45.49074694850809!2d-73.47169307872413!3f224.71361175506377!4f3.970320223242979!5f1.6823784109108262",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DEBECEFFDDDDDDD1DDF&t=pi&sm=m&w=1260&h=1024",
@@ -965,6 +983,7 @@
       "city_tax": "2722",
       "school_tax": "263",
       "centris": "18154266",
+      "centris_link": "https://www.centris.ca/en/condos~for-sale~longueuil-saint-hubert/18154266",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752379969705!6m8!1m7!1sY547UZCkSG_19X4DiYTLVA!2m2!1d45.50124215423954!2d-73.4380720563937!3f332.10765397298053!4f-0.9824804832579161!5f0.7820865974627469",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DEF1FA81DDDDDDD1DD4&t=pi&sm=m&w=1260&h=1024",
@@ -1019,6 +1038,7 @@
       "city_tax": "2527",
       "school_tax": "303",
       "centris": "23463854",
+      "centris_link": "https://www.centris.ca/en/condos~for-sale~brossard/23463854",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752379584613!6m8!1m7!1sKyfYGypeFbQN2k-o3dqQFA!2m2!1d45.46328595431537!2d-73.43592597260448!3f140.50505!4f0!5f0.7820865974627469",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DEF100FEDDDDDDD1DD0&t=pi&sm=m&w=1260&h=1024",
@@ -1078,6 +1098,7 @@
       "city_tax": "2648",
       "school_tax": "335",
       "centris": "18108191",
+      "centris_link": "https://www.centris.ca/en/condos~for-sale~brossard/18108191",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752379174243!6m8!1m7!1s3y-aCYvOhFMtYqsuSc_hnQ!2m2!1d45.42934325621391!2d-73.45056383972629!3f256.20810991657544!4f1.5496442793252925!5f1.2215577982054864",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DEB51997DDDDDDD1DDC&t=pi&sm=m&w=1260&h=1024",
@@ -1126,6 +1147,7 @@
       "city_tax": "2642",
       "school_tax": "351",
       "centris": "10371017",
+      "centris_link": "https://www.centris.ca/en/condos~for-sale~brossard/10371017",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752378008141!6m8!1m7!1simmnn3jSdLLFc84OVDTZZw!2m2!1d45.4285345538721!2d-73.44892567869306!3f114.20711895673203!4f-0.025446018723599195!5f0.7820865974627469",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DE0F0E95DDDDDDD1DDA&t=pi&sm=m&w=1260&h=1024",
@@ -1184,6 +1206,7 @@
       "city_tax": "2641",
       "school_tax": "333",
       "centris": "27256961",
+      "centris_link": "https://www.centris.ca/en/condos~for-sale~brossard/27256961",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752377375443!6m8!1m7!1sheumep_07Ffci2StNCpEmQ!2m2!1d45.42982696325942!2d-73.45096203926128!3f231.44927789408865!4f1.8100759895878866!5f1.0163144514280604",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DE0D4551DDDDDDD1DD1&t=pi&sm=m&w=1260&h=1024",
@@ -1223,6 +1246,7 @@
       "city_tax": "?",
       "school_tax": "?",
       "centris": "19176124",
+      "centris_link": "https://www.centris.ca/en/condos~for-sale~montreal-montreal-nord/19176124",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752360375793!6m8!1m7!1s_X7UIEhnndFMUNIHLSWYpQ!2m2!1d45.58532663157175!2d-73.64796312101454!3f30.38456363979382!4f-12.722593355475283!5f0.8573639678136316",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DE004499DDDDDDD1DD2&t=pi&f=I",
@@ -1269,6 +1293,7 @@
       "city_tax": "2544",
       "school_tax": "329",
       "centris": "17278114",
+      "centris_link": "https://www.centris.ca/en/condos~for-sale~brossard/17278114",
       "google_map": "https://www.google.com/maps/embed?pb=!4v1752360451380!6m8!1m7!1sSEyY4UbXlQe9xSZAjxiFpA!2m2!1d45.43240293565444!2d-73.44630929080064!3f343.46783!4f0!5f0.7820865974627469",
       "images": [
         "https://mspublic.centris.ca/media.ashx?id=ADDD250DEB856B6DDDDDDD1DD0&t=pi&sm=m&w=1260&h=1024",
