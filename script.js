@@ -52,8 +52,13 @@ fetch("./data.json")
           <div class="single-house">
             <div>
               <h1 style="color:red;">${house.title}, ${house.price} ${house.extra_info ? '<br>(' + house.extra_info + ')' : ''}</h1>
-              <h2>${house.bedrooms} · ${house.bathrooms} · ${house.parkings} · ${house.size} · ${house.year} yr</h1>
-              <h2>費$${house.condo_fee} · 地$${house.city_tax} · 校$${house.school_tax}</h1>
+              <h2>${house.bedrooms} · ${house.bathrooms} · ${house.parkings} · ${house.size} · ${house.year} yr</h2>
+              <h2>費$${house.condo_fee} · 地$${house.city_tax} · 校$${house.school_tax}</h2>
+              <div class="single-house__external-links">
+                <a href="${(house.centris_link) ? house.centris_link : '#'}"><i class="fa-solid fa-house-circle-${(house.centris_link) ? 'check' : 'exclamation'}"></i></a>
+                <a href="http://www.google.com/search?q=${encodeURIComponent('centris ' + house.centris)}"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></a>
+                <a href="http://maps.google.com/?q=${encodeURIComponent(house.address)}"><i class="fa-solid fa-location-dot"></i></a>
+              </div>
             </div>`
 
         if (house.google_map) {
