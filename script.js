@@ -1,6 +1,8 @@
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 const id = urlParams.get('id');
+const posListString = urlParams.get('list');
+
 
 fetch("./data.json")
   .then(response => response.json())
@@ -9,12 +11,41 @@ fetch("./data.json")
     let htmlCode = '';
     const bodyElement = document.querySelector('body');
 
-    if (id) {  //Single house display
+    if (posListString) {
+      const posList = posListString.split(',');
+      //console.log(posList);
+
+      htmlCode = '<table class="house-pos-list-table">';
+      posList.forEach(pos => {
+        const house = json.houses.filter(function (jsonObject) { return (jsonObject['pos'] == pos); })[0];
+
+        console.log(house);
+        htmlCode += `
+          <tbody class="${(house.date_delisted ? 'not-' : '')}available">
+            <tr>
+              <td class="house-pos-list-table__cover"><a href="?id=${house.id}"><img src ="${house.images[0]}"></a></td>
+              <td class="house-pos-list-table__price">${house.price}</td>
+              <td class="house-pos-list-table__address">${house.address}, ${house.city}</td>
+              <td class="house-pos-list-table__external-info">
+                ${house.centris}<br>
+                <div class="house-pos-list-table__external-links">
+                  <a href="${house.centris_link}">C</a>
+                  <a href="http://www.google.com/search?q=${encodeURIComponent('centris ' + house.centris)}">G</a>
+                  <a href="http://maps.google.com/?q=${encodeURIComponent(house.address)}">M</a>
+                </div>
+              </td>
+            </tr>
+          </tbody>`;
+        
+      });
+      htmlCode += '</table>';
+
+    } else if (id) {  //Single house display
       // function filterById(jsonObject, id) {return jsonObject.filter(function(jsonObject) {return (jsonObject['id'] == id);})[0];}
       //const house = filterById(json.houses, id);
 
       const house = json.houses.filter(function (jsonObject) { return (jsonObject['id'] == id); })[0];
-      console.log(house);
+      //console.log(house);
       if (house) {
         document.title = house.title;
         htmlCode += `
@@ -59,7 +90,7 @@ fetch("./data.json")
           htmlCode += `
             <tbody class="${(house.date_delisted ? 'not-' : '')}available">
               <tr>
-                <td colspan="99" class="house-table__cover">${(house.pos > 0 ) ? '<span class="house-table__postion">' + house.pos + '</span>' : ""}<a href="?id=${house.id}"><img src ="${house.images[0]}"></a></td>
+                <td colspan="99" class="house-table__cover">${(house.pos > 0) ? '<span class="house-table__postion">' + house.pos + '</span>' : ""}<a href="?id=${house.id}"><img src ="${house.images[0]}"></a></td>
               </tr>
               <tr>
                 <td class="house-table__price">${house.price}</td>

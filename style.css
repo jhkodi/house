@@ -62,7 +62,7 @@ body {
   font-size: 2em;
   padding: 4px;
   color: white;
-  background-color: rgb(50, 50, 50) ;
+  background-color: rgb(50, 50, 50);
   text-align: center;
   opacity: 0.50;
 }
@@ -76,7 +76,7 @@ body {
 }
 
 .house-table .house-table__description {
-  width: 45%
+  width: 45%;
 }
 
 .house-table .house-table__detail {
@@ -85,6 +85,44 @@ body {
 
 .not-available {
   background-color: grey;
+}
+
+/* Houses position list */
+
+.house-pos-list-table {
+  font-size: 0.75em;
+  border-collapse: collapse;
+}
+
+.house-pos-list-table th,
+.house-pos-list-table td {
+  border: 1px solid rgb(68, 120, 155);
+  padding: 1px 3px 1px 3px;
+  vertical-align: top;
+}
+
+.house-pos-list-table .house-pos-list-table__cover {
+  padding: 0 0 0 0;
+  margin: 0px;
+  border-spacing: 0px;
+  width: 40%;
+}
+
+.house-pos-list-table .house-pos-list-table__price {
+  width: 10%;
+}
+
+.house-pos-list-table .house-pos-list-table__address {
+  width: 35%;
+}
+
+.house-pos-list-table .house-pos-list-table__external-info {}
+
+.house-pos-list-table .house-pos-list-table__external-links {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  opacity: 0%;
 }
 
 
@@ -105,8 +143,10 @@ h2 {
 }
 
 iframe {
-  width: 100%; /* or width: 100vw; for full viewport width */
+  width: 100%;
+  /* or width: 100vw; for full viewport width */
   height: auto;
-  aspect-ratio: 16 / 9; /* Example: 16:9 aspect ratio */
+  aspect-ratio: 16 / 9;
+  /* Example: 16:9 aspect ratio */
   padding: 0px 40px 0px 0px;
 }
