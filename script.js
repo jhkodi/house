@@ -60,13 +60,12 @@ fetch("./data.json")
           <label for="lists">選擇清單: </label>
           <select name="lists" id="lists" class="lists-select" onChange="listChange(this)">
             <option value="">全部</option>`;
-      predefinedList = false;
+      let predefinedList = false;
       Object.entries(json.lists).forEach(([listName, listValue]) => {        
         predefinedList = (predefinedList || (listValue == posListString));
         htmlCode += `<option value="${listValue}" ${(listValue == posListString) ? ' selected' : ''}>${listName}</option>`;
       });
       if (!predefinedList && posListString) {
-        console.log(`<option value="${posListString}" selected>自訂清單</option>`);
         htmlCode += `<option value="${posListString}" selected>自訂清單</option>`;
       }
       htmlCode += `</select></div>`;
