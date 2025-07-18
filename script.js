@@ -11,27 +11,25 @@ fetch("./data.json")
     let htmlCode = '';
     const bodyElement = document.querySelector('body');
 
-    if (posListString) {
-      const posList = posListString.split(',');
-      //console.log(posList);
+    if (posListString) {  //Position listing display
+      const posList = posListString.split(',');      
 
       htmlCode = '<table class="house-pos-list-table">';
       posList.forEach(pos => {
         const house = json.houses.filter(function (jsonObject) { return (jsonObject['pos'] == pos); })[0];
-
-        console.log(house);
+        //console.log(house);
         htmlCode += `
           <tbody class="${(house.date_delisted ? 'not-' : '')}available">
             <tr>
-              <td class="house-pos-list-table__cover"><a href="?id=${house.id}"><img src ="${house.images[0]}"></a></td>
+              <td class="house-pos-list-table__cover">${(house.pos > 0) ? '<span class="house-pos-list-table__postion">' + house.pos + '</span>' : ""}<a href="?id=${house.id}"><img src ="${house.images[0]}"></a></td>
               <td class="house-pos-list-table__price">${house.price}</td>
               <td class="house-pos-list-table__address">${house.address}, ${house.city}</td>
               <td class="house-pos-list-table__external-info">
                 ${house.centris}<br>
                 <div class="house-pos-list-table__external-links">
-                  <a href="${house.centris_link}">C</a>
-                  <a href="http://www.google.com/search?q=${encodeURIComponent('centris ' + house.centris)}">G</a>
-                  <a href="http://maps.google.com/?q=${encodeURIComponent(house.address)}">M</a>
+                  <a href="${(house.centris_link) ? house.centris_link : '#'}"><i class="fa-solid fa-house-circle-${(house.centris_link) ? 'check' : 'exclamation'}"></i></a>
+                  <a href="http://www.google.com/search?q=${encodeURIComponent('centris ' + house.centris)}"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></a>
+                  <a href="http://maps.google.com/?q=${encodeURIComponent(house.address)}"><i class="fa-solid fa-location-dot"></i></a>
                 </div>
               </td>
             </tr>
@@ -82,9 +80,8 @@ fetch("./data.json")
         htmlCode = '<p>Invalid id</p>';
       }
     }
-
-    // All houses listing
-    else {
+   
+    else { // All houses listing
 
       htmlCode = '<table class="house-table">';
       json.houses.forEach(house => {
