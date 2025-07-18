@@ -11,34 +11,7 @@ fetch("./data.json")
     let htmlCode = '';
     const bodyElement = document.querySelector('body');
 
-    if (posListString) {  //Position listing display
-      const posList = posListString.split(',');      
-
-      htmlCode = '<table class="house-pos-list-table">';
-      posList.forEach(pos => {
-        const house = json.houses.filter(function (jsonObject) { return (jsonObject['pos'] == pos); })[0];
-        //console.log(house);
-        htmlCode += `
-          <tbody class="${(house.date_delisted ? 'not-' : '')}available">
-            <tr>
-              <td class="house-pos-list-table__cover">${(house.pos > 0) ? '<span class="house-pos-list-table__postion">' + house.pos + '</span>' : ""}<a href="?id=${house.id}"><img src ="${house.images[0]}"></a></td>
-              <td class="house-pos-list-table__price">${house.price}</td>
-              <td class="house-pos-list-table__address">${house.address}, ${house.city}</td>
-              <td class="house-pos-list-table__external-info">
-                ${house.centris}<br>
-                <div class="house-pos-list-table__external-links">
-                  <a href="${(house.centris_link) ? house.centris_link : '#'}"><i class="fa-solid fa-house-circle-${(house.centris_link) ? 'check' : 'exclamation'}"></i></a>
-                  <a href="http://www.google.com/search?q=${encodeURIComponent('centris ' + house.centris)}"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></a>
-                  <a href="http://maps.google.com/?q=${encodeURIComponent(house.address)}"><i class="fa-solid fa-location-dot"></i></a>
-                </div>
-              </td>
-            </tr>
-          </tbody>`;
-        
-      });
-      htmlCode += '</table>';
-
-    } else if (id) {  //Single house display
+    if (id) {  //Single house display
       // function filterById(jsonObject, id) {return jsonObject.filter(function(jsonObject) {return (jsonObject['id'] == id);})[0];}
       //const house = filterById(json.houses, id);
 
@@ -80,16 +53,55 @@ fetch("./data.json")
         htmlCode = '<p>Invalid id</p>';
       }
     }
-   
-    else { // All houses listing
+    else {
 
-      htmlCode = '<table class="house-table">';
-      json.houses.forEach(house => {
-        if (house.display) {
-          if (house.pos > 0) {
-            //htmlCode += `${house.pos}`;
-          }
+      htmlCode += `
+        <div class="lists-div">
+          <label for="lists">選擇清單: </label>
+          <select name="lists" id="lists" class="lists-select" onChange="listChange(this)">
+            <option value="">全部</option>`;
+      Object.entries(json.lists).forEach(([listName, listValue]) => {
+        htmlCode += `<option value="${listValue}" ${(listValue == posListString) ? ' selected' : ''}>${listName}</option>`;
+      });
+      htmlCode += `</select></div>`;
+
+
+      if (posListString) {  //Position listing display
+
+        const posList = posListString.split(',');
+        htmlCode += '<table class="house-pos-list-table">';
+        posList.forEach(pos => {
+          const house = json.houses.filter(function (jsonObject) { return (jsonObject['pos'] == pos); })[0];
+          //console.log(house);
           htmlCode += `
+          <tbody class="${(house.date_delisted ? 'not-' : '')}available">
+            <tr>
+              <td class="house-pos-list-table__cover">${(house.pos > 0) ? '<span class="house-pos-list-table__postion">' + house.pos + '</span>' : ""}<a href="?id=${house.id}"><img src ="${house.images[0]}"></a></td>
+              <td class="house-pos-list-table__price">${house.price}</td>
+              <td class="house-pos-list-table__address">${house.address}, ${house.city}</td>
+              <td class="house-pos-list-table__external-info">
+                ${house.centris}<br>
+                <div class="house-pos-list-table__external-links">
+                  <a href="${(house.centris_link) ? house.centris_link : '#'}"><i class="fa-solid fa-house-circle-${(house.centris_link) ? 'check' : 'exclamation'}"></i></a>
+                  <a href="http://www.google.com/search?q=${encodeURIComponent('centris ' + house.centris)}"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></a>
+                  <a href="http://maps.google.com/?q=${encodeURIComponent(house.address)}"><i class="fa-solid fa-location-dot"></i></a>
+                </div>
+              </td>
+            </tr>
+          </tbody>`;
+
+        });
+        htmlCode += '</table>';
+
+      } else { // All houses listing
+
+        htmlCode += '<table class="house-table">';
+        json.houses.forEach(house => {
+          if (house.display) {
+            if (house.pos > 0) {
+              //htmlCode += `${house.pos}`;
+            }
+            htmlCode += `
             <tbody class="${(house.date_delisted ? 'not-' : '')}available">
               <tr>
                 <td colspan="99" class="house-table__cover">${(house.pos > 0) ? '<span class="house-table__postion">' + house.pos + '</span>' : ""}<a href="?id=${house.id}"><img src ="${house.images[0]}"></a></td>
@@ -105,15 +117,22 @@ fetch("./data.json")
               </tr>
             </tbody>
           <tr><td class="house-table__blank-row">&nbsp;</td></tr>`;
-        }
-      });
+          }
+        });
 
-      htmlCode += '</table>';
+        htmlCode += '</table>';
 
-      //console.log(htmlCode);
+        
 
+      }
     }
 
+    //console.log(htmlCode);
     bodyElement.innerHTML = htmlCode;
 
   });
+
+function listChange(selectObject) {
+  var value = selectObject.value;
+  window.location.href = (selectObject.value ? "?list=" + selectObject.value : ".");
+}  

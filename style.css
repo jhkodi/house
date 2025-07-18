@@ -33,6 +33,16 @@ body {
 
 /* Normal CSS */
 
+.lists-div {
+  margin: 0px 0px 10px 0px;
+  font-size: 1.2em;
+}
+
+.lists-select {
+  font-size: 1.2em;
+}
+
+/* House table */
 
 .house-table {
   font-size: 1em;
