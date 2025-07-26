@@ -1,9 +1,7 @@
 {
-  "lists":
-    {
-      "2025-07-18": "21,23,16,25,5"
-    },
-
+  "lists": {
+    "2025-07-18": "21,23,16,25,5"
+  },
   "houses": [
     {
       "id": "sample",
@@ -49,7 +47,7 @@
       "bathrooms": "1+1 廁",
       "parkings": "1+1 車位",
       "condo_fee": "240",
-      "city_tax": "2,513",
+      "city_tax": "2513",
       "school_tax": "214",
       "centris": "20103101",
       "centris_link": "https://www.centris.ca/en/condominium-houses~for-sale~longueuil-le-vieux-longueuil/20103101",
