@@ -1,0 +1,60 @@
+{
+  "lists": {
+    "2025-07-18": "21,23,16,25,5"
+  },
+  "houses": [
+    {
+      "id": "sample",
+      "pos": 0,
+      "title": "1817 Rue Allard",
+      "price": "$999,000",
+      "display": false,
+      "date_added": "2025-07-12",
+      "date_delisted": "",
+      "year": "0000",
+      "address": "1817 Rue Allard",
+      "city": "Brossard",
+      "extra_info": "孖屋, A區",
+      "size": "0 平方米",
+      "bedrooms": "3 房",
+      "bathrooms": "1+1 廁",
+      "parkings": "0+2 車位",
+      "condo_fee": "?",
+      "city_tax": "?",
+      "school_tax": "?",
+      "centris": "0",
+      "centris_link": "",
+      "google_map": "https://www.google.com/maps",
+      "images": [
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC5E3BF8D1163C13D10&t=pi&sm=m&w=1260&h=1024",
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DC5E3BFFD1163C13D4D&t=pi&sm=m&w=1260&h=1024"
+      ]
+    },
+    {
+      "id": "o56N",
+      "pos": 1,
+      "title": "407 Chemin des Prairies",
+      "price": "$975,000",
+      "display": true,
+      "date_added": "2025-11-29",
+      "date_delisted": "",
+      "year": "1987",
+      "address": "407 Chemin des Prairies",
+      "city": "Brossard",
+      "extra_info": "獨立屋, R區",
+      "size": "497.1 平方米",
+      "bedrooms": "3+2 房",
+      "bathrooms": "2 廁",
+      "parkings": "2+2 車位",
+      "condo_fee": "0",
+      "city_tax": "3641",
+      "school_tax": "532",
+      "centris": "16876905",
+      "centris_link": "https://www.centris.ca/fr/maison~a-vendre~brossard/16876905?uc=0",
+      "google_map": "https://www.google.com/maps/embed?pb=!4v1764368079732!6m8!1m7!1sC4eos5qoFrxtjWFrAPxONA!2m2!1d45.43860948952505!2d-73.4911138051496!3f183.92081249262577!4f1.0251551688986353!5f0.508338863495219",
+      "images": [
+        "https://mspublic.centris.ca/media.ashx?id=ADDD250DEB6ACE5DDDDDDD1DDE&t=pi&sm=m&w=1260&h=1024"
+      ]
+    }
+  ]
+}
