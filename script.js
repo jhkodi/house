@@ -27,7 +27,7 @@ fetch("./data.json")
               <h2>費$${house.condo_fee} · 地$${house.city_tax} · 校$${house.school_tax}</h2>
               <div class="single-house__external-links">
                 <a href="${(house.centris_link) ? house.centris_link : '#'}"><i class="fa-solid fa-house-circle-${(house.centris_link) ? 'check' : 'exclamation'}"></i></a>
-                <a href="http://www.google.com/search?q=${encodeURIComponent('centris ' + house.centris)}"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></a>
+                <a href="http://www.google.com/search?q=${encodeURIComponent(house.centris > 0 ? 'centris ' + house.centris : house.address)}"><i class="fa-solid fa-magnifying-glass-arrow-right"></i></a>
                 <a href="http://maps.google.com/?q=${encodeURIComponent(house.address)}"><i class="fa-solid fa-location-dot"></i></a>
               </div>
             </div>`
